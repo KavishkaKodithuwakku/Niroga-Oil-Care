@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="නිරෝගා විශ්වජය ඔයිල් කෙයාර් - ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ්, ආයුර්වේදී ප්‍රතිකාර සහ ස්වභාවික සුව සේවා.">
+  <meta name="keywords" content="oil massage, Ayurveda, wellness, spa, Sri Lanka, herbal oil, pain relief, relaxation">
+  <meta name="author" content="Niroga Vishwajaya Oil Care (Pvt) Ltd">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="නිරෝගා විශ්වජය ඔයිල් කෙයාර්">
+  <meta property="og:description" content="නිරෝගී දිවියට සෞඛ්‍යමත් ස්පර්ශයක් - Premium traditional oil massage and wellness center">
+  <meta property="og:type" content="website">
+  <title>නිරෝගා විශ්වජය ඔයිල් කෙයාර් | Premium Wellness Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23173D31'/%3E%3Cellipse cx='50' cy='55' rx='18' ry='24' fill='%23C7A55B'/%3E%3Cpath d='M50 20 Q55 35 50 45 Q45 35 50 20' fill='%23587B43'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__content">
+      <div class="loader__logo" aria-label="Niroga Vishwajaya Oil Care">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="60" cy="60" r="55" stroke="#C7A55B" stroke-width="2" opacity="0.3"/>
+          <circle cx="60" cy="60" r="45" stroke="#C7A55B" stroke-width="1.5" opacity="0.5"/>
+          <ellipse cx="60" cy="68" rx="20" ry="26" fill="#C7A55B" opacity="0.9"/>
+          <path d="M60 28 C65 42 62 52 60 58 C58 52 55 42 60 28Z" fill="#587B43"/>
+          <path d="M60 22 C62 30 61 36 60 40 C59 36 58 30 60 22Z" fill="#173D31"/>
+        </svg>
+      </div>
+      <p class="loader__name" data-i18n="loaderName">නිරෝගා විශ්වජය ඔයිල් කෙයාර්</p>
+      <div class="loader__spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress" class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Page scroll progress"></div>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container header__inner">
+      <a href="#home" class="header__logo" aria-label="Home">
+        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="20" cy="22" rx="8" ry="10" fill="currentColor"/>
+          <path d="M20 8 C22 14 21 18 20 20 C19 18 18 14 20 8Z" fill="currentColor" opacity="0.7"/>
+        </svg>
+        <span class="header__logo-text" data-i18n="logoShort">නිරෝගා ඔයිල් කෙයාර්</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link" data-i18n="navHome">මුල් පිටුව</a></li>
+          <li><a href="#about" class="nav__link" data-i18n="navAbout">අප ගැන</a></li>
+          <li><a href="#services" class="nav__link" data-i18n="navServices">සේවාවන්</a></li>
+          <li><a href="#benefits" class="nav__link" data-i18n="navBenefits">ප්‍රයෝජන</a></li>
+          <li><a href="#gallery" class="nav__link" data-i18n="navGallery">ගැලරිය</a></li>
+          <li><a href="#testimonials" class="nav__link" data-i18n="navTestimonials">ප්‍රතිචාර</a></li>
+          <li><a href="#faq" class="nav__link" data-i18n="navFaq">නිති අසන</a></li>
+          <li><a href="#contact" class="nav__link nav__link--accent" data-i18n="navContact">සම්බන්ධ වන්න</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-switch__btn active" data-lang="si" aria-pressed="true">සිං</button>
+          <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="tel:+94771234567" class="btn btn--gold btn--sm header__call" data-i18n="callNow">ඇමතුම් කරන්න</a>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero__bg" data-parallax="0.3">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=85&auto=format&fit=crop" alt="" loading="eager" class="hero__bg-img">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__waves" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="rgba(248,246,242,0.15)"/></svg>
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,80 C480,20 960,100 1440,50 L1440,120 L0,120 Z" fill="rgba(199,165,91,0.08)"/></svg>
+      </div>
+
+      <!-- Floating decorative elements -->
+      <div class="hero__float hero__float--leaf hero__float--1" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4 C24 12 22 20 20 28 C18 20 16 12 20 4Z" fill="rgba(88,123,67,0.5)"/><path d="M20 12 C22 16 21 20 20 24" stroke="rgba(199,165,91,0.6)" stroke-width="1"/></svg></div>
+      <div class="hero__float hero__float--leaf hero__float--2" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 6 C26 14 24 22 20 30 C16 22 14 14 20 6Z" fill="rgba(88,123,67,0.4)"/></svg></div>
+      <div class="hero__float hero__float--leaf hero__float--3" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8 C23 14 22 18 20 26 C18 18 17 14 20 8Z" fill="rgba(88,123,67,0.35)"/></svg></div>
+      <div class="hero__float hero__float--bottle" aria-hidden="true">
+        <svg viewBox="0 0 60 100" fill="none"><rect x="22" y="8" width="16" height="12" rx="2" fill="#C7A55B"/><path d="M18 20 H42 V85 Q42 95 30 95 Q18 95 18 85 Z" fill="rgba(199,165,91,0.6)" stroke="#C7A55B" stroke-width="1.5"/><ellipse cx="30" cy="55" rx="8" ry="20" fill="rgba(88,123,67,0.4)"/></svg>
+      </div>
+
+      <div class="container hero__content">
+        <span class="hero__badge fade-up" data-i18n="heroBadge">2025 සිට · ශ්‍රී ලංකාවේ ප්‍රමුඛ සුවසනැගි මධ්‍යස්ථානය</span>
+        <h1 class="hero__title fade-up" data-i18n="heroTitle">නිරෝගී දිවියට සෞඛ්‍යමත් ස්පර්ශයක්</h1>
+        <p class="hero__subtitle fade-up" data-i18n="heroSubtitle">ප්‍රජාවේ සුවය සඳහා ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ් සහ ආයුර්වේදී ප්‍රතිකාර</p>
+        <div class="hero__cta fade-up">
+          <a href="#contact" class="btn btn--gold btn--ripple" data-i18n="heroCtaContact">සම්බන්ධ වන්න</a>
+          <a href="#services" class="btn btn--outline btn--ripple" data-i18n="heroCtaExplore">සේවාවන් බලන්න</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="aboutLabel">අප ගැන</span>
+          <h2 class="section__title" data-i18n="aboutTitle">නිරෝගා විශ්වජය ඔයිල් කෙයාර්</h2>
+          <p class="section__desc" data-i18n="aboutDesc">ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ් සහ wellness මධ්‍යස්ථානයක් ලෙස, අපි ආයුර්වේදී ප්‍රතිකාර, herbal oil therapies, සහ natural healing සේවා ලබා දෙමු.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__image fade-right">
+            <div class="about__image-main">
+              <img src="https://images.unsplash.com/photo-1600334089648-b0d5d302826b?w=800&q=80&auto=format&fit=crop" alt="Traditional wellness therapy session" loading="lazy">
+            </div>
+            <div class="about__image-accent">
+              <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80&auto=format&fit=crop" alt="Ayurvedic herbal oils" loading="lazy">
+            </div>
+            <div class="about__experience glass-card">
+              <span class="about__experience-num">2025</span>
+              <span class="about__experience-text" data-i18n="aboutFounded">පිහිටුවන ලදී</span>
+            </div>
+          </div>
+
+          <div class="about__content fade-left">
+            <div class="about__card glass-card">
+              <h3 data-i18n="aboutStoryTitle">අපගේ කතාව</h3>
+              <p data-i18n="aboutStory">නිරෝගා විශ්වජය ඔයිල් කෙයාර් (පුද්) සමාගම 2025 දී පිහිටුවන ලද premium wellness මධ්‍යස්ථානයකි. ශ්‍රී ලංකාවේ පරම්පරාගත oil massage ශිල්පය modern wellness standards සමඟ සම්බන්ධ කර, සෑම පාරිභෝගිකයෙකුටම authentic healing experience එකක් ලබා දෙමු.</p>
+            </div>
+            <div class="about__cards">
+              <div class="about__mini-card fade-up">
+                <div class="about__mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
+                <h4 data-i18n="aboutMissionTitle">මෙහෙවර</h4>
+                <p data-i18n="aboutMission">100% herbal oils සහ traditional Ayurvedic methods මගින් natural healing promote කිරීම.</p>
+              </div>
+              <div class="about__mini-card fade-up">
+                <div class="about__mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                <h4 data-i18n="aboutVisionTitle">දර්ශනය</h4>
+                <p data-i18n="aboutVision">ශ්‍රී ලංකාවේ most trusted traditional oil massage and wellness brand බවට පත්වීම.</p>
+              </div>
+            </div>
+            <blockquote class="about__quote glass-card fade-up">
+              <p data-i18n="founderMessage">"සෑම පුද්ගලයෙකුටම natural wellness හරහා balanced, pain-free life එකක් ලබා ගත හැකි බව අපි විශ්වාස කරමු. අපගේ therapists පරම්පරාගත knowledge සහ modern care standards එකට මුසු කරමු."</p>
+              <cite data-i18n="founderName">— Managing Director, නිරෝගා විශ්වජය</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section why-us">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="whyLabel">ඇයි අප?</span>
+          <h2 class="section__title" data-i18n="whyTitle">අපව තෝරා ගත යුත්තේ ඇයි</h2>
+        </div>
+        <div class="why-us__grid">
+          <article class="why-card fade-up">
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2"/><path d="M8 42 C8 32 15 26 24 26 C33 26 40 32 40 42" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3 data-i18n="why1Title">Experienced Therapists</h3>
+            <p data-i18n="why1Desc">Certified professionals with years of traditional massage expertise.</p>
+          </article>
+          <article class="why-card fade-up">
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4 L28 18 L42 18 L31 27 L35 42 L24 33 L13 42 L17 27 L6 18 L20 18 Z" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3 data-i18n="why2Title">100% Herbal Oils</h3>
+            <p data-i18n="why2Desc">Pure, natural oils sourced from authentic Sri Lankan herbs.</p>
+          </article>
+          <article class="why-card fade-up">
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8 L8 40 H40 Z" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="28" r="6" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3 data-i18n="why3Title">Traditional Ayurvedic Methods</h3>
+            <p data-i18n="why3Desc">Time-honored techniques passed down through generations.</p>
+          </article>
+          <article class="why-card fade-up">
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M6 22 H42" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3 data-i18n="why4Title">Comfortable Environment</h3>
+            <p data-i18n="why4Desc">Serene, hygienic spaces designed for complete relaxation.</p>
+          </article>
+          <article class="why-card fade-up">
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 14 V24 L30 30" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3 data-i18n="why5Title">Affordable Prices</h3>
+            <p data-i18n="why5Desc">Premium quality treatments at accessible, fair pricing.</p>
+          </article>
+          <article class="why-card fade-up">
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 42 C24 42 6 28 6 16 C6 10 12 6 18 6 C21 6 24 8 24 8 C24 8 27 6 30 6 C36 6 42 10 42 16 C42 28 24 42 24 42Z" stroke="currentColor" stroke-width="2"/></svg></div>
+            <h3 data-i18n="why6Title">Trusted Service</h3>
+            <p data-i18n="why6Desc">Hundreds of satisfied clients and glowing reviews.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="servicesLabel">සේවාවන්</span>
+          <h2 class="section__title" data-i18n="servicesTitle">Premium Wellness Treatments</h2>
+          <p class="section__desc" data-i18n="servicesDesc">Traditional oil massage සිට specialized pain relief therapies දක්වා — සෑම treatment එකක්ම personalized care සමඟ.</p>
+        </div>
+        <div class="services__grid">
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&q=80&auto=format&fit=crop" alt="Traditional oil massage" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc1Title">Traditional Oil Massage</h3>
+              <p data-i18n="svc1Desc">Authentic Sri Lankan oil massage using warm herbal oils for deep relaxation.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1596178065880-8824b025a786?w=600&q=80&auto=format&fit=crop" alt="Head massage therapy" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc2Title">Head Massage</h3>
+              <p data-i18n="svc2Desc">Relieve tension, headaches, and stress with specialized scalp therapy.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1610637455216-aba894393566?w=600&q=80&auto=format&fit=crop" alt="Foot therapy" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc3Title">Foot Therapy</h3>
+              <p data-i18n="svc3Desc">Reflexology-based foot massage for improved circulation and relief.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1552693678-1a38a488b891?w=600&q=80&auto=format&fit=crop" alt="Neck and shoulder therapy" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc4Title">Neck & Shoulder Therapy</h3>
+              <p data-i18n="svc4Desc">Targeted treatment for office stress, stiffness, and muscle tension.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80&auto=format&fit=crop" alt="Full body relaxation" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc5Title">Full Body Relaxation</h3>
+              <p data-i18n="svc5Desc">Complete body treatment for total mind and body rejuvenation.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80&auto=format&fit=crop" alt="Sports massage" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc6Title">Sports Massage</h3>
+              <p data-i18n="svc6Desc">Athletic recovery massage to enhance performance and prevent injury.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80&auto=format&fit=crop" alt="Pain relief therapy" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc7Title">Pain Relief Therapy</h3>
+              <p data-i18n="svc7Desc">Specialized treatment for chronic pain, arthritis, and joint issues.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+          <article class="service-card fade-up">
+            <div class="service-card__img"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=80&auto=format&fit=crop" alt="Herbal oil treatment" loading="lazy"></div>
+            <div class="service-card__body">
+              <h3 data-i18n="svc8Title">Herbal Oil Treatment</h3>
+              <p data-i18n="svc8Desc">Custom-blended herbal oils for skin nourishment and deep healing.</p>
+              <a href="#contact" class="service-card__link" data-i18n="svcContact">Learn More →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Treatment Process Timeline -->
+    <section id="process" class="section process">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="processLabel">Treatment Process</span>
+          <h2 class="section__title" data-i18n="processTitle">Your Journey to Wellness</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__track" aria-hidden="true"></div>
+          <div class="timeline__steps">
+            <div class="timeline__step fade-up">
+              <div class="timeline__icon"><svg viewBox="0 0 48 48"><path d="M24 4 L44 14 V34 L24 44 L4 34 V14 Z" fill="none" stroke="currentColor" stroke-width="2"/><text x="24" y="28" text-anchor="middle" fill="currentColor" font-size="14">1</text></svg></div>
+              <h4 data-i18n="step1Title">Consultation</h4>
+              <p data-i18n="step1Desc">Discuss your health needs and wellness goals.</p>
+            </div>
+            <div class="timeline__arrow" aria-hidden="true">↓</div>
+            <div class="timeline__step fade-up">
+              <div class="timeline__icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 24 L22 30 L32 18" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+              <h4 data-i18n="step2Title">Health Assessment</h4>
+              <p data-i18n="step2Desc">Professional evaluation of your condition.</p>
+            </div>
+            <div class="timeline__arrow" aria-hidden="true">↓</div>
+            <div class="timeline__step fade-up">
+              <div class="timeline__icon"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="30" rx="12" ry="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 14 H28 V18 H20 Z" stroke="currentColor" stroke-width="2"/></svg></div>
+              <h4 data-i18n="step3Title">Oil Selection</h4>
+              <p data-i18n="step3Desc">Custom herbal oil blend chosen for you.</p>
+            </div>
+            <div class="timeline__arrow" aria-hidden="true">↓</div>
+            <div class="timeline__step fade-up">
+              <div class="timeline__icon"><svg viewBox="0 0 48 48"><path d="M8 36 Q24 8 40 36" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="28" r="4" fill="currentColor"/></svg></div>
+              <h4 data-i18n="step4Title">Treatment Session</h4>
+              <p data-i18n="step4Desc">Expert massage therapy in a serene setting.</p>
+            </div>
+            <div class="timeline__arrow" aria-hidden="true">↓</div>
+            <div class="timeline__step fade-up">
+              <div class="timeline__icon"><svg viewBox="0 0 48 48"><path d="M12 28 Q24 8 36 28" fill="none" stroke="currentColor" stroke-width="2"/><line x1="12" y1="28" x2="36" y2="28" stroke="currentColor" stroke-width="2"/></svg></div>
+              <h4 data-i18n="step5Title">Relaxation</h4>
+              <p data-i18n="step5Desc">Post-treatment rest for maximum benefit.</p>
+            </div>
+            <div class="timeline__arrow" aria-hidden="true">↓</div>
+            <div class="timeline__step fade-up">
+              <div class="timeline__icon"><svg viewBox="0 0 48 48"><rect x="10" y="8" width="28" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16" y1="18" x2="32" y2="18" stroke="currentColor" stroke-width="2"/><line x1="16" y1="26" x2="28" y2="26" stroke="currentColor" stroke-width="2"/></svg></div>
+              <h4 data-i18n="step6Title">After Care Advice</h4>
+              <p data-i18n="step6Desc">Personalized tips for lasting wellness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section benefits">
+      <div class="benefits__bg"></div>
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="benefitsLabel">ප්‍රයෝජන</span>
+          <h2 class="section__title" data-i18n="benefitsTitle">Wellness Benefits</h2>
+        </div>
+        <div class="benefits__grid">
+          <div class="benefit-item fade-up">
+            <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+            <h3 data-i18n="ben1Title">Pain Relief</h3>
+            <p data-i18n="ben1Desc">Alleviates muscle and joint pain naturally.</p>
+          </div>
+          <div class="benefit-item fade-up">
+            <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+            <h3 data-i18n="ben2Title">Stress Reduction</h3>
+            <p data-i18n="ben2Desc">Calms the mind and reduces anxiety.</p>
+          </div>
+          <div class="benefit-item fade-up">
+            <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></div>
+            <h3 data-i18n="ben3Title">Better Sleep</h3>
+            <p data-i18n="ben3Desc">Promotes deeper, more restful sleep.</p>
+          </div>
+          <div class="benefit-item fade-up">
+            <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+            <h3 data-i18n="ben4Title">Healthy Blood Circulation</h3>
+            <p data-i18n="ben4Desc">Improves blood flow and oxygen delivery.</p>
+          </div>
+          <div class="benefit-item fade-up">
+            <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1M6 8H5a4 4 0 000 8h1M6 8v8M18 8v8M6 12h12"/></svg></div>
+            <h3 data-i18n="ben5Title">Muscle Recovery</h3>
+            <p data-i18n="ben5Desc">Accelerates recovery after physical activity.</p>
+          </div>
+          <div class="benefit-item fade-up">
+            <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3 data-i18n="ben6Title">Natural Healing</h3>
+            <p data-i18n="ben6Desc">Supports the body's innate healing ability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Therapists Section -->
+    <section id="team" class="section team">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="teamLabel">Our Team</span>
+          <h2 class="section__title" data-i18n="teamTitle">Meet Our Therapists</h2>
+        </div>
+        <div class="team__grid">
+          <article class="team-card fade-up">
+            <div class="team-card__photo"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80&auto=format&fit=crop" alt="Dr. Amara Perera" loading="lazy"></div>
+            <div class="team-card__body">
+              <h3 data-i18n="team1Name">Dr. Amara Perera</h3>
+              <span class="team-card__role" data-i18n="team1Role">Ayurvedic Specialist</span>
+              <span class="team-card__exp" data-i18n="team1Exp">12+ Years Experience</span>
+              <p data-i18n="team1Desc">Expert in traditional oil massage and herbal therapy with deep Ayurvedic knowledge.</p>
+            </div>
+          </article>
+          <article class="team-card fade-up">
+            <div class="team-card__photo"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80&auto=format&fit=crop" alt="Nimal Fernando" loading="lazy"></div>
+            <div class="team-card__body">
+              <h3 data-i18n="team2Name">Nimal Fernando</h3>
+              <span class="team-card__role" data-i18n="team2Role">Senior Massage Therapist</span>
+              <span class="team-card__exp" data-i18n="team2Exp">10+ Years Experience</span>
+              <p data-i18n="team2Desc">Specializes in sports massage and pain relief therapies for athletes.</p>
+            </div>
+          </article>
+          <article class="team-card fade-up">
+            <div class="team-card__photo"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80&auto=format&fit=crop" alt="Kamani Silva" loading="lazy"></div>
+            <div class="team-card__body">
+              <h3 data-i18n="team3Name">Kamani Silva</h3>
+              <span class="team-card__role" data-i18n="team3Role">Head & Foot Therapy Expert</span>
+              <span class="team-card__exp" data-i18n="team3Exp">8+ Years Experience</span>
+              <p data-i18n="team3Desc">Renowned for head massage and reflexology with a gentle, healing touch.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="section counters">
+      <div class="container">
+        <div class="counters__grid">
+          <div class="counter-item fade-up">
+            <span class="counter-item__num" data-target="250">0</span>
+            <span class="counter-item__plus">+</span>
+            <p data-i18n="counter1">Happy Clients</p>
+          </div>
+          <div class="counter-item fade-up">
+            <span class="counter-item__num" data-target="500">0</span>
+            <span class="counter-item__plus">+</span>
+            <p data-i18n="counter2">Treatments Completed</p>
+          </div>
+          <div class="counter-item fade-up">
+            <span class="counter-item__num" data-target="8">0</span>
+            <span class="counter-item__plus">+</span>
+            <p data-i18n="counter3">Wellness Services</p>
+          </div>
+          <div class="counter-item fade-up">
+            <span class="counter-item__num" data-target="98">0</span>
+            <span class="counter-item__plus">%</span>
+            <p data-i18n="counter4">Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="galleryLabel">ගැලරිය</span>
+          <h2 class="section__title" data-i18n="galleryTitle">Our Wellness Sanctuary</h2>
+        </div>
+        <div class="gallery__grid">
+          <div class="gallery__item gallery__item--tall fade-up"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80&auto=format&fit=crop" alt="Luxury spa relaxation room" loading="lazy"></div>
+          <div class="gallery__item fade-up"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80&auto=format&fit=crop" alt="Ayurvedic herbs and oils" loading="lazy"></div>
+          <div class="gallery__item fade-up"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=80&auto=format&fit=crop" alt="Essential herbal oils" loading="lazy"></div>
+          <div class="gallery__item gallery__item--wide fade-up"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900&q=80&auto=format&fit=crop" alt="Traditional massage therapy" loading="lazy"></div>
+          <div class="gallery__item fade-up"><img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=600&q=80&auto=format&fit=crop" alt="Natural wellness environment" loading="lazy"></div>
+          <div class="gallery__item gallery__item--tall fade-up"><img src="https://images.unsplash.com/photo-1600334089648-b0d5d302826b?w=600&q=80&auto=format&fit=crop" alt="Spa treatment room" loading="lazy"></div>
+          <div class="gallery__item fade-up"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&q=80&auto=format&fit=crop" alt="Oil massage session" loading="lazy"></div>
+          <div class="gallery__item fade-up"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80&auto=format&fit=crop" alt="Healing therapy session" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="testimonialsLabel">ප්‍රතිචාර</span>
+          <h2 class="section__title" data-i18n="testimonialsTitle">What Our Clients Say</h2>
+        </div>
+        <div class="testimonials__carousel fade-up">
+          <div class="testimonials__track" id="testimonialTrack">
+            <article class="testimonial-card">
+              <div class="testimonial-card__header">
+                <div class="testimonial-card__avatar">S</div>
+                <div>
+                  <h4>Sanduni Jayawardena</h4>
+                  <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+                </div>
+                <svg class="testimonial-card__google" viewBox="0 0 24 24" aria-label="Google Review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              </div>
+              <p data-i18n="test1">"Amazing traditional oil massage! My back pain completely disappeared after just three sessions. Highly recommend!"</p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__header">
+                <div class="testimonial-card__avatar">R</div>
+                <div>
+                  <h4>Ruwan Bandara</h4>
+                  <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+                </div>
+                <svg class="testimonial-card__google" viewBox="0 0 24 24" aria-label="Google Review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              </div>
+              <p data-i18n="test2">"Professional service with authentic herbal oils. The environment is so peaceful and the therapists are truly skilled."</p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__header">
+                <div class="testimonial-card__avatar">M</div>
+                <div>
+                  <h4>Malini Wickramasinghe</h4>
+                  <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+                </div>
+                <svg class="testimonial-card__google" viewBox="0 0 24 24" aria-label="Google Review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              </div>
+              <p data-i18n="test3">"Best wellness center in the area! Affordable prices with premium quality. I visit every month for full body relaxation."</p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__header">
+                <div class="testimonial-card__avatar">D</div>
+                <div>
+                  <h4>Dilshan Perera</h4>
+                  <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+                </div>
+                <svg class="testimonial-card__google" viewBox="0 0 24 24" aria-label="Google Review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              </div>
+              <p data-i18n="test4">"Sports massage here helped me recover from a knee injury. The therapists really know what they're doing!"</p>
+            </article>
+          </div>
+          <div class="testimonials__nav">
+            <button type="button" class="testimonials__btn" id="testPrev" aria-label="Previous testimonial">←</button>
+            <div class="testimonials__dots" id="testDots"></div>
+            <button type="button" class="testimonials__btn" id="testNext" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="faqLabel">නිති අසන ප්‍රශ්න</span>
+          <h2 class="section__title" data-i18n="faqTitle">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq__list fade-up">
+          <div class="faq__item">
+            <button type="button" class="faq__question" aria-expanded="false">
+              <span data-i18n="faq1Q">What types of oil massage do you offer?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p data-i18n="faq1A">We offer traditional Sri Lankan oil massage, head massage, foot therapy, neck & shoulder therapy, full body relaxation, sports massage, pain relief therapy, and custom herbal oil treatments.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__question" aria-expanded="false">
+              <span data-i18n="faq2Q">Are your oils 100% natural?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p data-i18n="faq2A">Yes, we use only 100% herbal and natural oils sourced from authentic Sri Lankan herbs. No synthetic additives or chemicals are used in our treatments.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__question" aria-expanded="false">
+              <span data-i18n="faq3Q">How long does a typical session last?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p data-i18n="faq3A">Sessions typically range from 45 minutes to 90 minutes depending on the treatment type. We recommend allowing extra time for consultation and post-treatment relaxation.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__question" aria-expanded="false">
+              <span data-i18n="faq4Q">How can I reach you for inquiries?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p data-i18n="faq4A">You can call us directly, message us on WhatsApp, or visit our center during business hours. Our team will gladly assist you with treatment information and availability.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__question" aria-expanded="false">
+              <span data-i18n="faq5Q">What should I wear for a massage session?</span>
+              <span class="faq__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq__answer">
+              <p data-i18n="faq5A">Comfortable, loose clothing is recommended. We provide clean towels and drapes for your privacy and comfort during the treatment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section cta-banner">
+      <div class="container cta-banner__inner">
+        <div class="cta-banner__content fade-up">
+          <span class="section__label" data-i18n="ctaLabel">Get Started</span>
+          <h2 class="cta-banner__title" data-i18n="ctaTitle">Begin Your Wellness Journey Today</h2>
+          <p data-i18n="ctaDesc">Reach out by phone or WhatsApp — our team is ready to guide you toward natural healing and relaxation.</p>
+        </div>
+        <div class="cta-banner__actions fade-up">
+          <a href="tel:+94771234567" class="btn btn--gold btn--ripple" data-i18n="callNow">Call Now</a>
+          <a href="https://wa.me/94771234567" class="btn btn--outline-gold btn--ripple" target="_blank" rel="noopener" data-i18n="ctaWhatsapp">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__label" data-i18n="contactLabel">සම්බන්ධ වන්න</span>
+          <h2 class="section__title" data-i18n="contactTitle">Get In Touch</h2>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__cards fade-up">
+            <div class="contact-card glass-card">
+              <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+              <h3 data-i18n="contactPhone">Phone</h3>
+              <a href="tel:+94771234567">+94 77 123 4567</a>
+            </div>
+            <div class="contact-card glass-card">
+              <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+              <h3 data-i18n="contactWhatsapp">WhatsApp</h3>
+              <a href="https://wa.me/94771234567" target="_blank" rel="noopener">+94 77 123 4567</a>
+            </div>
+            <div class="contact-card glass-card">
+              <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <h3 data-i18n="contactEmail">Email</h3>
+              <a href="mailto:info@nirogavishwajaya.lk">info@nirogavishwajaya.lk</a>
+            </div>
+            <div class="contact-card glass-card">
+              <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <h3 data-i18n="contactHours">Business Hours</h3>
+              <p data-i18n="contactHoursVal">Mon – Sat: 8:00 AM – 8:00 PM<br>Sunday: 9:00 AM – 5:00 PM</p>
+            </div>
+            <div class="contact-card glass-card contact-card--wide">
+              <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <h3 data-i18n="contactAddress">Address</h3>
+              <p data-i18n="contactAddressVal">No. 45, Wellness Avenue, Colombo 07, Sri Lanka</p>
+            </div>
+          </div>
+          <div class="contact__map fade-up">
+            <iframe
+              class="contact__map-iframe"
+              title="Niroga Vishwajaya Oil Care Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798509837!2d79.8607!3d6.9271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259249c050c49%3A0xe00d9e38a6c0b!2sColombo!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="22" rx="8" ry="10" fill="#C7A55B"/><path d="M20 8 C22 14 21 18 20 20 C19 18 18 14 20 8Z" fill="#587B43"/></svg>
+            <span data-i18n="footerBrand">නිරෝගා විශ්වජය ඔයිල් කෙයාර්</span>
+          </div>
+          <p data-i18n="footerDesc">Premium Sri Lankan traditional oil massage and wellness center. Your journey to natural healing starts here.</p>
+        </div>
+        <div class="footer__links">
+          <h4 data-i18n="footerQuickLinks">Quick Links</h4>
+          <ul>
+            <li><a href="#home" data-i18n="navHome">Home</a></li>
+            <li><a href="#about" data-i18n="navAbout">About</a></li>
+            <li><a href="#services" data-i18n="navServices">Services</a></li>
+            <li><a href="#gallery" data-i18n="navGallery">Gallery</a></li>
+            <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 data-i18n="footerServices">Services</h4>
+          <ul>
+            <li><a href="#services" data-i18n="svc1Title">Traditional Oil Massage</a></li>
+            <li><a href="#services" data-i18n="svc2Title">Head Massage</a></li>
+            <li><a href="#services" data-i18n="svc7Title">Pain Relief Therapy</a></li>
+            <li><a href="#services" data-i18n="svc8Title">Herbal Oil Treatment</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 data-i18n="footerContact">Contact</h4>
+          <p>+94 77 123 4567</p>
+          <p>info@nirogavishwajaya.lk</p>
+          <p data-i18n="contactAddressVal">No. 45, Wellness Avenue, Colombo 07</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 <span data-i18n="footerCopyright">නිරෝගා විශ්වජය ඔයිල් කෙයාර් (පුද්) සමාගම. සියලුම අයිතිවාසිකම් ඇවිරිණි.</span></p>
+        <a href="#" data-i18n="footerPrivacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/94771234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Back to Top -->
+  <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
