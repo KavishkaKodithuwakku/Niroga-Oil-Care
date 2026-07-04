@@ -1,5 +1,5 @@
 /**
- * Niroga Vishwajaya Oil Care - Premium Website Scripts
+ * Niroga Oil Care - Premium Website Scripts
  * Vanilla JavaScript - No dependencies
  */
 
@@ -11,38 +11,34 @@
      ============================================ */
   const translations = {
     si: {
-      loaderName: 'නිරෝගා විශ්වජය ඔයිල් කෙයාර්',
+      loaderName: 'නිරෝගා ඔයිල් කෙයාර්',
       logoShort: 'නිරෝගා ඔයිල් කෙයාර්',
       navHome: 'මුල් පිටුව',
       navAbout: 'අප ගැන',
       navServices: 'සේවාවන්',
       navBenefits: 'ප්‍රයෝජන',
-      navGallery: 'ගැලරිය',
-      navTestimonials: 'ප්‍රතිචාර',
       navFaq: 'නිති අසන ප්‍රශ්න',
       navContact: 'සම්බන්ධ වන්න',
       callNow: 'ඇමතුම් කරන්න',
       heroBadge: '2025 සිට · ශ්‍රී ලංකාවේ ප්‍රමුඛ සුවසනැගි මධ්‍යස්ථානය',
       heroTitle: 'නිරෝගී දිවියට සෞඛ්‍යමත් ස්පර්ශයක්',
-      heroSubtitle: 'ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ්, ආයුර්වේදී ප්‍රතිකාර සහ ස්වභාවික සුවය සඳහා විශ්වාසදායක wellness මධ්‍යස්ථානයක්.',
+      heroSubtitle: 'ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ්, ආයුර්වේදී ප්‍රතිකාර සහ ස්වභාවික සුවය සඳහා විශ්වාසදායක මධ්‍යස්ථානයක්.',
       heroCtaContact: 'සම්බන්ධ වන්න',
       heroCtaExplore: 'සේවාවන් බලන්න',
       aboutLabel: 'අප ගැන',
-      aboutTitle: 'නිරෝගා විශ්වජය ඔයිල් කෙයාර්',
+      aboutTitle: 'නිරෝගා  ඔයිල් කෙයාර්',
       aboutDesc: 'ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ් සහ සුවසනැගි මධ්‍යස්ථානයක් ලෙස, අපි ආයුර්වේදී ප්‍රතිකාර, ශාක ඖෂධ තෙල් ප්‍රතිකාර සහ ස්වභාවික සුව සේවා ලබා දෙමු.',
       aboutFounded: 'පිහිටුවන ලදී',
       aboutStoryTitle: 'අපගේ කතාව',
-      aboutStory: 'නිරෝගා විශ්වජය ඔයිල් කෙයාර් (පුද්) සමාගම 2025 දී පිහිටුවන ලද premium wellness මධ්‍යස්ථානයකි. ශ්‍රී ලංකාවේ පරම්පරාගත ඔයිල් මසාජ් ශිල්පය නවීන සුවසනැගි ප්‍රමිතීන් සමඟ සම්බන්ධ කර, සෑම පාරිභෝගිකයෙකුටම සත්‍ය සුව අත්දැකීමක් ලබා දෙමු.',
+      aboutStory: 'නිරෝගා  ඔයිල් කෙයාර් (පුද්) සමාගම 2025 දී පිහිටුවන ලද premium wellness මධ්‍යස්ථානයකි. ශ්‍රී ලංකාවේ පරම්පරාගත ඔයිල් මසාජ් ශිල්පය නවීන සුවසනැගි ප්‍රමිතීන් සමඟ සම්බන්ධ කර, සෑම පාරිභෝගිකයෙකුටම සත්‍ය සුව අත්දැකීමක් ලබා දෙමු.',
       aboutMissionTitle: 'මෙහෙවර',
       aboutMission: '100% ශාක ඖෂධ තෙල් සහ සම්ප්‍රදායික ආයුර්වේදී ක්‍රම මගින් ස්වභාවික සුවය ප්‍රවර්ධනය කිරීම.',
       aboutVisionTitle: 'දර්ශනය',
       aboutVision: 'ශ්‍රී ලංකාවේ විශ්වාසදායක සම්ප්‍රදායික ඔයිල් මසාජ් සහ wellness සන්නාමය බවට පත්වීම.',
       founderMessage: '"සෑම පුද්ගලයෙකුටම ස්වභාවික wellness හරහා සමතුලිත, වේදනාවක් රහිත ජීවිතයක් ලබා ගත හැකි බව අපි විශ්වාස කරමු. අපගේ therapists පරම්පරාගත දැනුම සහ නවීන සුවසනැගි ප්‍රමිතීන් එකට මුසු කරමු."',
-      founderName: '— කළමනාකාර අධ්‍යක්ෂක, නිරෝගා විශ්වජය',
+      founderName: '— කළමනාකාර අධ්‍යක්ෂක, නිරෝගා ',
       whyLabel: 'ඇයි අප?',
       whyTitle: 'අපව තෝරා ගත යුත්තේ ඇයි',
-      why1Title: 'Experienced Therapists',
-      why1Desc: 'Certified professionals with years of traditional massage expertise.',
       why2Title: '100% Herbal Oils',
       why2Desc: 'Pure, natural oils sourced from authentic Sri Lankan herbs.',
       why3Title: 'Traditional Ayurvedic Methods',
@@ -101,32 +97,10 @@
       ben5Desc: 'Accelerates recovery after physical activity.',
       ben6Title: 'Natural Healing',
       ben6Desc: "Supports the body's innate healing ability.",
-      teamLabel: 'Our Team',
-      teamTitle: 'Meet Our Therapists',
-      team1Name: 'Dr. Amara Perera',
-      team1Role: 'Ayurvedic Specialist',
-      team1Exp: '12+ Years Experience',
-      team1Desc: 'Expert in traditional oil massage and herbal therapy with deep Ayurvedic knowledge.',
-      team2Name: 'Nimal Fernando',
-      team2Role: 'Senior Massage Therapist',
-      team2Exp: '10+ Years Experience',
-      team2Desc: 'Specializes in sports massage and pain relief therapies for athletes.',
-      team3Name: 'Kamani Silva',
-      team3Role: 'Head & Foot Therapy Expert',
-      team3Exp: '8+ Years Experience',
-      team3Desc: 'Renowned for head massage and reflexology with a gentle, healing touch.',
       counter1: 'Happy Clients',
       counter2: 'Treatments Completed',
       counter3: 'Wellness Services',
       counter4: 'Client Satisfaction',
-      galleryLabel: 'ගැලරිය',
-      galleryTitle: 'Our Wellness Sanctuary',
-      testimonialsLabel: 'ප්‍රතිචාර',
-      testimonialsTitle: 'What Our Clients Say',
-      test1: '"Amazing traditional oil massage! My back pain completely disappeared after just three sessions. Highly recommend!"',
-      test2: '"Professional service with authentic herbal oils. The environment is so peaceful and the therapists are truly skilled."',
-      test3: '"Best wellness center in the area! Affordable prices with premium quality. I visit every month for full body relaxation."',
-      test4: '"Sports massage here helped me recover from a knee injury. The therapists really know what they\'re doing!"',
       faqLabel: 'නිති අසන ප්‍රශ්න',
       faqTitle: 'Frequently Asked Questions',
       faq1Q: 'What types of oil massage do you offer?',
@@ -152,23 +126,21 @@
       contactHoursVal: 'Mon – Sat: 8:00 AM – 8:00 PM<br>Sunday: 9:00 AM – 5:00 PM',
       contactAddress: 'Address',
       contactAddressVal: 'No. 45, Wellness Avenue, Colombo 07, Sri Lanka',
-      footerBrand: 'නිරෝගා විශ්වජය ඔයිල් කෙයාර්',
+      footerBrand: 'නිරෝගා ඔයිල් කෙයාර්',
       footerDesc: 'Premium Sri Lankan traditional oil massage and wellness center. Your journey to natural healing starts here.',
       footerQuickLinks: 'Quick Links',
       footerServices: 'Services',
       footerContact: 'Contact',
-      footerCopyright: 'නිරෝගා විශ්වජය ඔයිල් කෙයාර් (පුද්) සමාගම. සියලුම අයිතිවාසිකම් ඇවිරිණි.',
+      footerCopyright: 'නිරෝගා ඔයිල් කෙයාර් (පුද්) සමාගම. සියලුම අයිතිවාසිකම් ඇවිරිණි.',
       footerPrivacy: 'Privacy Policy'
     },
     en: {
-      loaderName: 'Niroga Vishwajaya Oil Care',
+      loaderName: 'Niroga Oil Care',
       logoShort: 'Niroga Oil Care',
       navHome: 'Home',
       navAbout: 'About',
       navServices: 'Services',
       navBenefits: 'Benefits',
-      navGallery: 'Gallery',
-      navTestimonials: 'Testimonials',
       navFaq: 'FAQ',
       navContact: 'Contact',
       callNow: 'Call Now',
@@ -178,11 +150,11 @@
       heroCtaContact: 'Contact Us',
       heroCtaExplore: 'Explore Services',
       aboutLabel: 'About Us',
-      aboutTitle: 'Niroga Vishwajaya Oil Care',
+      aboutTitle: 'Niroga  Oil Care',
       aboutDesc: 'As a premium Sri Lankan traditional oil massage and wellness center, we provide Ayurvedic treatments, herbal oil therapies, and natural healing services.',
       aboutFounded: 'Founded',
       aboutStoryTitle: 'Our Story',
-      aboutStory: 'Niroga Vishwajaya Oil Care (Pvt) Ltd was established in 2025 as a premium wellness center. We blend Sri Lanka\'s traditional oil massage artistry with modern wellness standards to deliver an authentic healing experience for every client.',
+      aboutStory: 'Niroga Oil Care (Pvt) Ltd was established in 2025 as a premium wellness center. We blend Sri Lanka\'s traditional oil massage artistry with modern wellness standards to deliver an authentic healing experience for every client.',
       aboutMissionTitle: 'Mission',
       aboutMission: 'To promote natural healing through 100% herbal oils and traditional Ayurvedic methods.',
       aboutVisionTitle: 'Vision',
@@ -251,32 +223,10 @@
       ben5Desc: 'Accelerates recovery after physical activity.',
       ben6Title: 'Natural Healing',
       ben6Desc: "Supports the body's innate healing ability.",
-      teamLabel: 'Our Team',
-      teamTitle: 'Meet Our Therapists',
-      team1Name: 'Dr. Amara Perera',
-      team1Role: 'Ayurvedic Specialist',
-      team1Exp: '12+ Years Experience',
-      team1Desc: 'Expert in traditional oil massage and herbal therapy with deep Ayurvedic knowledge.',
-      team2Name: 'Nimal Fernando',
-      team2Role: 'Senior Massage Therapist',
-      team2Exp: '10+ Years Experience',
-      team2Desc: 'Specializes in sports massage and pain relief therapies for athletes.',
-      team3Name: 'Kamani Silva',
-      team3Role: 'Head & Foot Therapy Expert',
-      team3Exp: '8+ Years Experience',
-      team3Desc: 'Renowned for head massage and reflexology with a gentle, healing touch.',
       counter1: 'Happy Clients',
       counter2: 'Treatments Completed',
       counter3: 'Wellness Services',
       counter4: 'Client Satisfaction',
-      galleryLabel: 'Gallery',
-      galleryTitle: 'Our Wellness Sanctuary',
-      testimonialsLabel: 'Testimonials',
-      testimonialsTitle: 'What Our Clients Say',
-      test1: '"Amazing traditional oil massage! My back pain completely disappeared after just three sessions. Highly recommend!"',
-      test2: '"Professional service with authentic herbal oils. The environment is so peaceful and the therapists are truly skilled."',
-      test3: '"Best wellness center in the area! Affordable prices with premium quality. I visit every month for full body relaxation."',
-      test4: '"Sports massage here helped me recover from a knee injury. The therapists really know what they\'re doing!"',
       faqLabel: 'FAQ',
       faqTitle: 'Frequently Asked Questions',
       faq1Q: 'What types of oil massage do you offer?',
@@ -302,12 +252,12 @@
       contactHoursVal: 'Mon – Sat: 8:00 AM – 8:00 PM<br>Sunday: 9:00 AM – 5:00 PM',
       contactAddress: 'Address',
       contactAddressVal: 'No. 45, Wellness Avenue, Colombo 07, Sri Lanka',
-      footerBrand: 'Niroga Vishwajaya Oil Care',
+      footerBrand: 'Niroga Oil Care',
       footerDesc: 'Premium Sri Lankan traditional oil massage and wellness center. Your journey to natural healing starts here.',
       footerQuickLinks: 'Quick Links',
       footerServices: 'Services',
       footerContact: 'Contact',
-      footerCopyright: 'Niroga Vishwajaya Oil Care (Pvt) Ltd. All rights reserved.',
+      footerCopyright: 'Niroga Oil Care (Pvt) Ltd. All rights reserved.',
       footerPrivacy: 'Privacy Policy'
     }
   };
@@ -323,15 +273,21 @@
   const nav = document.getElementById('nav');
   const hamburger = document.getElementById('hamburger');
   const backToTop = document.getElementById('backToTop');
-  const testimonialTrack = document.getElementById('testimonialTrack');
-  const testPrev = document.getElementById('testPrev');
-  const testNext = document.getElementById('testNext');
-  const testDots = document.getElementById('testDots');
+
+  let loaderInitialized = false;
+  let scrollProgressInitialized = false;
+  let headerInitialized = false;
+  let mobileNavInitialized = false;
+  let parallaxInitialized = false;
+  let countersInitialized = false;
+  let backToTopInitialized = false;
 
   /* ============================================
      LOADING SCREEN
      ============================================ */
   function initLoader() {
+    if (loaderInitialized) return;
+    loaderInitialized = true;
     document.body.classList.add('loading');
 
     window.addEventListener('load', function () {
@@ -361,6 +317,8 @@
      SCROLL PROGRESS BAR
      ============================================ */
   function initScrollProgress() {
+    if (scrollProgressInitialized) return;
+    scrollProgressInitialized = true;
     window.addEventListener('scroll', function () {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -374,6 +332,8 @@
      HEADER SCROLL EFFECT
      ============================================ */
   function initHeader() {
+    if (headerInitialized) return;
+    headerInitialized = true;
     header.classList.add('header--transparent');
 
     function updateHeader() {
@@ -394,6 +354,8 @@
      MOBILE NAVIGATION
      ============================================ */
   function initMobileNav() {
+    if (mobileNavInitialized) return;
+    mobileNavInitialized = true;
     hamburger.addEventListener('click', function () {
       const isOpen = nav.classList.toggle('open');
       hamburger.classList.toggle('active', isOpen);
@@ -416,6 +378,8 @@
      ============================================ */
   function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      if (anchor.getAttribute('data-smooth-scroll-initialized') === 'true') return;
+      anchor.setAttribute('data-smooth-scroll-initialized', 'true');
       anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         if (href === '#') return;
@@ -470,6 +434,8 @@
     });
 
     revealElements.forEach(function (el) {
+      if (el.getAttribute('data-reveal-initialized') === 'true') return;
+      el.setAttribute('data-reveal-initialized', 'true');
       if (!el.closest('.hero')) {
         observer.observe(el);
       }
@@ -480,6 +446,8 @@
      PARALLAX EFFECT
      ============================================ */
   function initParallax() {
+    if (parallaxInitialized) return;
+    parallaxInitialized = true;
     const parallaxElements = document.querySelectorAll('[data-parallax]');
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -500,6 +468,8 @@
      ANIMATED COUNTERS
      ============================================ */
   function initCounters() {
+    if (countersInitialized) return;
+    countersInitialized = true;
     const counters = document.querySelectorAll('.counter-item__num');
     let animated = false;
 
@@ -539,76 +509,12 @@
   }
 
   /* ============================================
-     TESTIMONIALS CAROUSEL
-     ============================================ */
-  let currentSlide = 0;
-  let slideCount = 0;
-  let autoplayInterval;
-
-  function initTestimonials() {
-    if (!testimonialTrack) return;
-
-    const slides = testimonialTrack.querySelectorAll('.testimonial-card');
-    slideCount = slides.length;
-
-    for (let i = 0; i < slideCount; i++) {
-      const dot = document.createElement('button');
-      dot.classList.add('testimonials__dot');
-      dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
-      if (i === 0) dot.classList.add('active');
-      dot.addEventListener('click', function () {
-        goToSlide(i);
-        resetAutoplay();
-      });
-      testDots.appendChild(dot);
-    }
-
-    testPrev.addEventListener('click', function () {
-      goToSlide(currentSlide - 1);
-      resetAutoplay();
-    });
-
-    testNext.addEventListener('click', function () {
-      goToSlide(currentSlide + 1);
-      resetAutoplay();
-    });
-
-    startAutoplay();
-
-    testimonialTrack.addEventListener('mouseenter', stopAutoplay);
-    testimonialTrack.addEventListener('mouseleave', startAutoplay);
-  }
-
-  function goToSlide(index) {
-    currentSlide = ((index % slideCount) + slideCount) % slideCount;
-    testimonialTrack.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
-
-    testDots.querySelectorAll('.testimonials__dot').forEach(function (dot, i) {
-      dot.classList.toggle('active', i === currentSlide);
-    });
-  }
-
-  function startAutoplay() {
-    stopAutoplay();
-    autoplayInterval = setInterval(function () {
-      goToSlide(currentSlide + 1);
-    }, 5000);
-  }
-
-  function stopAutoplay() {
-    if (autoplayInterval) clearInterval(autoplayInterval);
-  }
-
-  function resetAutoplay() {
-    stopAutoplay();
-    startAutoplay();
-  }
-
-  /* ============================================
      FAQ ACCORDION
      ============================================ */
   function initFAQ() {
     document.querySelectorAll('.faq__item').forEach(function (item) {
+      if (item.getAttribute('data-faq-initialized') === 'true') return;
+      item.setAttribute('data-faq-initialized', 'true');
       const question = item.querySelector('.faq__question');
 
       question.addEventListener('click', function () {
@@ -631,6 +537,8 @@
      BACK TO TOP
      ============================================ */
   function initBackToTop() {
+    if (backToTopInitialized) return;
+    backToTopInitialized = true;
     window.addEventListener('scroll', function () {
       if (window.scrollY > 500) {
         backToTop.classList.add('visible');
@@ -649,6 +557,8 @@
      ============================================ */
   function initLanguageSwitcher() {
     document.querySelectorAll('.lang-switch__btn').forEach(function (btn) {
+      if (btn.getAttribute('data-lang-switcher-initialized') === 'true') return;
+      btn.setAttribute('data-lang-switcher-initialized', 'true');
       btn.addEventListener('click', function () {
         const lang = btn.getAttribute('data-lang');
         setLanguage(lang);
@@ -687,17 +597,6 @@
   }
 
   /* ============================================
-     GALLERY LIGHT HOVER ENHANCEMENT
-     ============================================ */
-  function initGallery() {
-    document.querySelectorAll('.gallery__item').forEach(function (item) {
-      item.setAttribute('tabindex', '0');
-      item.setAttribute('role', 'button');
-      item.setAttribute('aria-label', 'View gallery image');
-    });
-  }
-
-  /* ============================================
      INITIALIZE ALL
      ============================================ */
   function init() {
@@ -709,12 +608,13 @@
     initScrollReveal();
     initParallax();
     initCounters();
-    initTestimonials();
     initFAQ();
     initBackToTop();
     initLanguageSwitcher();
-    initGallery();
   }
+
+  window.initPageComponents = init;
+  window.revealHeroElements = revealHeroElements;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
