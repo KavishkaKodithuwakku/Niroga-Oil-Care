@@ -3,22 +3,54 @@
     <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=85&auto=format&fit=crop" alt="" loading="eager" class="hero__bg-img">
   </div>
   <div class="hero__overlay"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <!-- Wave Dividers -->
   <div class="hero__waves" aria-hidden="true">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,70 L1440,120 L0,120 Z" fill="rgba(248,246,242,0.15)"/></svg>
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,80 C480,20 960,100 1440,50 L1440,120 L0,120 Z" fill="rgba(199,165,91,0.08)"/></svg>
+    <svg class="wave-1" viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,60 C240,110 480,10 720,60 C960,110 1200,20 1440,60 L1440,120 L0,120 Z" fill="rgba(248,246,242,0.12)"/>
+    </svg>
+    <svg class="wave-2" viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,80 C320,20 640,100 960,60 C1120,40 1280,90 1440,70 L1440,120 L0,120 Z" fill="rgba(199,165,91,0.07)"/>
+    </svg>
   </div>
 
-  <div class="hero__float hero__float--leaf hero__float--1" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4 C24 12 22 20 20 28 C18 20 16 12 20 4Z" fill="rgba(88,123,67,0.5)"/><path d="M20 12 C22 16 21 20 20 24" stroke="rgba(199,165,91,0.6)" stroke-width="1"/></svg></div>
-  <div class="hero__float hero__float--leaf hero__float--2" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 6 C26 14 24 22 20 30 C16 22 14 14 20 6Z" fill="rgba(88,123,67,0.4)"/></svg></div>
-  <div class="hero__float hero__float--leaf hero__float--3" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 8 C23 14 22 18 20 26 C18 18 17 14 20 8Z" fill="rgba(88,123,67,0.35)"/></svg></div>
+  <!-- Floating Leaves -->
+  <div class="hero__float hero__float--leaf hero__float--1" aria-hidden="true">
+    <svg viewBox="0 0 40 40" fill="none">
+      <path d="M20 4 C26 14 24 22 20 30 C16 22 14 14 20 4Z" fill="rgba(88,123,67,0.55)"/>
+      <path d="M20 10 C22 16 21 22 20 26" stroke="rgba(199,165,91,0.7)" stroke-width="1.2"/>
+    </svg>
+  </div>
+  <div class="hero__float hero__float--leaf hero__float--2" aria-hidden="true">
+    <svg viewBox="0 0 40 40" fill="none">
+      <path d="M20 6 C27 15 25 23 20 32 C15 23 13 15 20 6Z" fill="rgba(46,204,143,0.35)"/>
+    </svg>
+  </div>
+  <div class="hero__float hero__float--leaf hero__float--3" aria-hidden="true">
+    <svg viewBox="0 0 40 40" fill="none">
+      <path d="M20 8 C24 15 23 20 20 28 C17 20 16 15 20 8Z" fill="rgba(88,123,67,0.4)"/>
+    </svg>
+  </div>
+  <!-- Floating Oil Bottle -->
   <div class="hero__float hero__float--bottle" aria-hidden="true">
-    <svg viewBox="0 0 60 100" fill="none"><rect x="22" y="8" width="16" height="12" rx="2" fill="#C7A55B"/><path d="M18 20 H42 V85 Q42 95 30 95 Q18 95 18 85 Z" fill="rgba(199,165,91,0.6)" stroke="#C7A55B" stroke-width="1.5"/><ellipse cx="30" cy="55" rx="8" ry="20" fill="rgba(88,123,67,0.4)"/></svg>
+    <svg viewBox="0 0 60 100" fill="none">
+      <rect x="22" y="6" width="16" height="13" rx="3" fill="#C7A55B" opacity="0.85"/>
+      <path d="M18 19 H42 V86 Q42 96 30 96 Q18 96 18 86 Z" fill="rgba(199,165,91,0.5)" stroke="#C7A55B" stroke-width="1.5"/>
+      <ellipse cx="30" cy="58" rx="9" ry="22" fill="rgba(46,204,143,0.25)"/>
+      <ellipse cx="26" cy="38" rx="3" ry="7" fill="rgba(255,255,255,0.15)"/>
+    </svg>
   </div>
 
   <div class="container hero__content">
-    <span class="hero__badge fade-up" data-i18n="heroBadge">2025 සිට · ශ්‍රී ලංකාවේ ප්‍රමුඛ සුවසනැගි මධ්‍යස්ථානය</span>
+    <span class="hero__badge fade-up" data-i18n="heroBadge">
+      <span class="hero__badge-dot"></span>
+      2025 සිට · ශ්‍රී ලංකාවේ ප්‍රමුඛ සුවසනැගි මධ්‍යස්ථානය
+    </span>
     <h1 class="hero__title fade-up" data-i18n="heroTitle">නිරෝගී දිවියට සෞඛ්‍යමත් ස්පර්ශයක්</h1>
-    <p class="hero__subtitle fade-up" data-i18n="heroSubtitle">ප්‍රජාවේ සුවය සඳහා ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ් සහ ආයුර්වේදී ප්‍රතිකාර</p>
+    <p class="hero__subtitle fade-up" data-i18n="heroSubtitle">ශ්‍රී ලංකාවේ සම්ප්‍රදායික ඔයිල් මසාජ්, ආයුර්වේදී ප්‍රතිකාර සහ ස්වභාවික සුවය සඳහා විශ්වාසදායක මධ්‍යස්ථානයක්.</p>
     <div class="hero__cta fade-up">
       <a href="#contact" class="btn btn--gold btn--ripple" data-i18n="heroCtaContact">සම්බන්ධ වන්න</a>
       <a href="#services" class="btn btn--outline btn--ripple" data-i18n="heroCtaExplore">සේවාවන් බලන්න</a>

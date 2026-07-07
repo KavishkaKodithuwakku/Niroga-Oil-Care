@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23173D31'/%3E%3Cellipse cx='50' cy='55' rx='18' ry='24' fill='%23C7A55B'/%3E%3Cpath d='M50 20 Q55 35 50 45 Q45 35 50 20' fill='%23587B43'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23173D31'/%3E%3Ccircle cx='50' cy='50' r='44' fill='none' stroke='%23C7A55B' stroke-width='1.5' opacity='0.5'/%3E%3Cpath d='M50 22 Q62 30 62 44 Q62 56 50 62 Q38 56 38 44 Q38 30 50 22Z' fill='%23C7A55B' opacity='0.9'/%3E%3Cpath d='M50 18 Q52 28 50 36 Q48 28 50 18Z' fill='%232ECC8F'/%3E%3Cpath d='M50 62 Q56 70 50 78 Q44 70 50 62Z' fill='%23C7A55B' opacity='0.6'/%3E%3Ccircle cx='50' cy='44' r='6' fill='%23173D31' opacity='0.4'/%3E%3C/svg%3E">
 </head>
 <body>
 
@@ -23,12 +23,27 @@
   <div id="loader" class="loader" aria-hidden="true">
     <div class="loader__content">
       <div class="loader__logo" aria-label="Niroga Oil Care">
-        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="60" cy="60" r="55" stroke="#C7A55B" stroke-width="2" opacity="0.3"/>
-          <circle cx="60" cy="60" r="45" stroke="#C7A55B" stroke-width="1.5" opacity="0.5"/>
-          <ellipse cx="60" cy="68" rx="20" ry="26" fill="#C7A55B" opacity="0.9"/>
-          <path d="M60 28 C65 42 62 52 60 58 C58 52 55 42 60 28Z" fill="#587B43"/>
-          <path d="M60 22 C62 30 61 36 60 40 C59 36 58 30 60 22Z" fill="#173D31"/>
+        <div class="loader__logo-ring"></div>
+        <div class="loader__logo-ring"></div>
+        <!-- Niroga Lotus Logo -->
+        <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Outer ring -->
+          <circle cx="70" cy="70" r="66" stroke="#C7A55B" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+          <!-- Inner glow circle -->
+          <circle cx="70" cy="70" r="54" fill="rgba(199,165,91,0.06)"/>
+          <!-- Lotus petals -->
+          <path d="M70 30 Q82 44 82 58 Q82 70 70 76 Q58 70 58 58 Q58 44 70 30Z" fill="#C7A55B" opacity="0.95"/>
+          <path d="M40 48 Q56 54 60 66 Q56 76 44 78 Q36 68 40 48Z" fill="#C7A55B" opacity="0.65"/>
+          <path d="M100 48 Q84 54 80 66 Q84 76 96 78 Q104 68 100 48Z" fill="#C7A55B" opacity="0.65"/>
+          <path d="M34 74 Q50 72 58 82 Q56 94 46 98 Q34 90 34 74Z" fill="#C7A55B" opacity="0.4"/>
+          <path d="M106 74 Q90 72 82 82 Q84 94 94 98 Q106 90 106 74Z" fill="#C7A55B" opacity="0.4"/>
+          <!-- Stem -->
+          <path d="M70 24 Q73 34 70 42 Q67 34 70 24Z" fill="#2ECC8F"/>
+          <!-- Oil drop center -->
+          <ellipse cx="70" cy="62" rx="10" ry="13" fill="#173D31" opacity="0.5"/>
+          <ellipse cx="67" cy="57" rx="3" ry="4" fill="rgba(255,255,255,0.2)"/>
+          <!-- Base drop -->
+          <path d="M70 78 Q76 88 70 98 Q64 88 70 78Z" fill="#C7A55B" opacity="0.7"/>
         </svg>
       </div>
       <p class="loader__name" data-i18n="loaderName">නිරෝගා ඔයිල් කෙයාර්</p>
@@ -43,11 +58,20 @@
   <header id="header" class="header">
     <div class="container header__inner">
       <a href="#home" class="header__logo" aria-label="Home">
-        <svg class="header__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <ellipse cx="20" cy="22" rx="8" ry="10" fill="currentColor"/>
-          <path d="M20 8 C22 14 21 18 20 20 C19 18 18 14 20 8Z" fill="currentColor" opacity="0.7"/>
+        <!-- Niroga Lotus Icon -->
+        <svg class="header__logo-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="22" cy="22" r="20" fill="rgba(199,165,91,0.15)" stroke="rgba(199,165,91,0.4)" stroke-width="1"/>
+          <path d="M22 10 Q28 16 28 22 Q28 28 22 31 Q16 28 16 22 Q16 16 22 10Z" fill="#C7A55B" opacity="0.95"/>
+          <path d="M10 19 Q17 21 19 27 Q15 31 10 29 Q7 23 10 19Z" fill="#C7A55B" opacity="0.55"/>
+          <path d="M34 19 Q27 21 25 27 Q29 31 34 29 Q37 23 34 19Z" fill="#C7A55B" opacity="0.55"/>
+          <path d="M22 7 Q23.5 12 22 15 Q20.5 12 22 7Z" fill="#2ECC8F"/>
+          <ellipse cx="22" cy="22" rx="5" ry="6" fill="rgba(23,61,49,0.5)"/>
+          <path d="M22 31 Q25 36 22 40 Q19 36 22 31Z" fill="#C7A55B" opacity="0.7"/>
         </svg>
-        <span class="header__logo-text" data-i18n="logoShort">නිරෝගා ඔයිල් කෙයාර්</span>
+        <span class="header__logo-text-wrap">
+          <span class="header__logo-main" data-i18n="logoShort">නිරෝගා</span>
+          <span class="header__logo-sub">Oil Care</span>
+        </span>
       </a>
 
       <nav class="nav" id="nav" aria-label="Main navigation">
@@ -86,28 +110,33 @@
           <h2 class="section__title" data-i18n="whyTitle">අපව තෝරා ගත යුත්තේ ඇයි</h2>
         </div>
         <div class="why-us__grid">
-          <article class="why-card fade-up">
-            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4 L28 18 L42 18 L31 27 L35 42 L24 33 L13 42 L17 27 L6 18 L20 18 Z" stroke="currentColor" stroke-width="2"/></svg></div>
+          <article class="why-card fade-up tilt-card stagger-1">
+            <span class="why-card__num">01</span>
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4 L28 18 L42 18 L31 27 L35 42 L24 33 L13 42 L17 27 L6 18 L20 18 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
             <h3 data-i18n="why2Title">100% Herbal Oils</h3>
             <p data-i18n="why2Desc">Pure, natural oils sourced from authentic Sri Lankan herbs.</p>
           </article>
-          <article class="why-card fade-up">
-            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 8 L8 40 H40 Z" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="28" r="6" stroke="currentColor" stroke-width="2"/></svg></div>
+          <article class="why-card fade-up tilt-card stagger-2">
+            <span class="why-card__num">02</span>
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6 C30 14 30 22 24 30 C18 22 18 14 24 6Z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="24" cy="34" r="6" stroke="currentColor" stroke-width="2"/></svg></div>
             <h3 data-i18n="why3Title">Traditional Ayurvedic Methods</h3>
             <p data-i18n="why3Desc">Time-honored techniques passed down through generations.</p>
           </article>
-          <article class="why-card fade-up">
-            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M6 22 H42" stroke="currentColor" stroke-width="2"/></svg></div>
+          <article class="why-card fade-up tilt-card stagger-3">
+            <span class="why-card__num">03</span>
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M6 22 H42" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="30" r="2" fill="currentColor"/></svg></div>
             <h3 data-i18n="why4Title">Comfortable Environment</h3>
             <p data-i18n="why4Desc">Serene, hygienic spaces designed for complete relaxation.</p>
           </article>
-          <article class="why-card fade-up">
-            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 14 V24 L30 30" stroke="currentColor" stroke-width="2"/></svg></div>
+          <article class="why-card fade-up tilt-card stagger-4">
+            <span class="why-card__num">04</span>
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 14 V24 L31 31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
             <h3 data-i18n="why5Title">Affordable Prices</h3>
             <p data-i18n="why5Desc">Premium quality treatments at accessible, fair pricing.</p>
           </article>
-          <article class="why-card fade-up">
-            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 42 C24 42 6 28 6 16 C6 10 12 6 18 6 C21 6 24 8 24 8 C24 8 27 6 30 6 C36 6 42 10 42 16 C42 28 24 42 24 42Z" stroke="currentColor" stroke-width="2"/></svg></div>
+          <article class="why-card fade-up tilt-card stagger-5">
+            <span class="why-card__num">05</span>
+            <div class="why-card__icon"><svg viewBox="0 0 48 48" fill="none"><path d="M24 42 C24 42 6 28 6 16 C6 10 12 6 18 6 C21 6 24 8 24 8 C24 8 27 6 30 6 C36 6 42 10 42 16 C42 28 24 42 24 42Z" stroke="currentColor" stroke-width="2"/><path d="M18 20 L22 24 L30 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
             <h3 data-i18n="why6Title">Trusted Service</h3>
             <p data-i18n="why6Desc">Hundreds of satisfied clients and glowing reviews.</p>
           </article>
@@ -127,38 +156,38 @@
         <div class="timeline">
           <div class="timeline__track" aria-hidden="true"></div>
           <div class="timeline__steps">
-            <div class="timeline__step fade-up">
-              <div class="timeline__icon"><svg viewBox="0 0 48 48"><path d="M24 4 L44 14 V34 L24 44 L4 34 V14 Z" fill="none" stroke="currentColor" stroke-width="2"/><text x="24" y="28" text-anchor="middle" fill="currentColor" font-size="14">1</text></svg></div>
+            <div class="timeline__step fade-up stagger-1">
+              <div class="timeline__icon"><span class="timeline__step-num">1</span><svg viewBox="0 0 48 48"><path d="M24 4 L44 14 V34 L24 44 L4 34 V14 Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 22 L22 26 L30 18" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
               <h4 data-i18n="step1Title">Consultation</h4>
               <p data-i18n="step1Desc">Discuss your health needs and wellness goals.</p>
             </div>
-            <div class="timeline__arrow" aria-hidden="true">↓</div>
-            <div class="timeline__step fade-up">
-              <div class="timeline__icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 24 L22 30 L32 18" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+            <div class="timeline__arrow" aria-hidden="true">→</div>
+            <div class="timeline__step fade-up stagger-2">
+              <div class="timeline__icon"><span class="timeline__step-num">2</span><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 24 L22 30 L32 18" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
               <h4 data-i18n="step2Title">Health Assessment</h4>
               <p data-i18n="step2Desc">Professional evaluation of your condition.</p>
             </div>
-            <div class="timeline__arrow" aria-hidden="true">↓</div>
-            <div class="timeline__step fade-up">
-              <div class="timeline__icon"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="30" rx="12" ry="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 14 H28 V18 H20 Z" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="timeline__arrow" aria-hidden="true">→</div>
+            <div class="timeline__step fade-up stagger-3">
+              <div class="timeline__icon"><span class="timeline__step-num">3</span><svg viewBox="0 0 48 48"><ellipse cx="24" cy="30" rx="12" ry="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 14 H28 V18 H20 Z" stroke="currentColor" stroke-width="2"/></svg></div>
               <h4 data-i18n="step3Title">Oil Selection</h4>
               <p data-i18n="step3Desc">Custom herbal oil blend chosen for you.</p>
             </div>
-            <div class="timeline__arrow" aria-hidden="true">↓</div>
-            <div class="timeline__step fade-up">
-              <div class="timeline__icon"><svg viewBox="0 0 48 48"><path d="M8 36 Q24 8 40 36" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="28" r="4" fill="currentColor"/></svg></div>
+            <div class="timeline__arrow" aria-hidden="true">→</div>
+            <div class="timeline__step fade-up stagger-4">
+              <div class="timeline__icon"><span class="timeline__step-num">4</span><svg viewBox="0 0 48 48"><path d="M8 36 Q24 8 40 36" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="28" r="5" fill="currentColor"/></svg></div>
               <h4 data-i18n="step4Title">Treatment Session</h4>
               <p data-i18n="step4Desc">Expert massage therapy in a serene setting.</p>
             </div>
-            <div class="timeline__arrow" aria-hidden="true">↓</div>
-            <div class="timeline__step fade-up">
-              <div class="timeline__icon"><svg viewBox="0 0 48 48"><path d="M12 28 Q24 8 36 28" fill="none" stroke="currentColor" stroke-width="2"/><line x1="12" y1="28" x2="36" y2="28" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="timeline__arrow" aria-hidden="true">→</div>
+            <div class="timeline__step fade-up stagger-5">
+              <div class="timeline__icon"><span class="timeline__step-num">5</span><svg viewBox="0 0 48 48"><path d="M12 28 Q24 8 36 28" fill="none" stroke="currentColor" stroke-width="2"/><line x1="12" y1="28" x2="36" y2="28" stroke="currentColor" stroke-width="2"/></svg></div>
               <h4 data-i18n="step5Title">Relaxation</h4>
               <p data-i18n="step5Desc">Post-treatment rest for maximum benefit.</p>
             </div>
-            <div class="timeline__arrow" aria-hidden="true">↓</div>
-            <div class="timeline__step fade-up">
-              <div class="timeline__icon"><svg viewBox="0 0 48 48"><rect x="10" y="8" width="28" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16" y1="18" x2="32" y2="18" stroke="currentColor" stroke-width="2"/><line x1="16" y1="26" x2="28" y2="26" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="timeline__arrow" aria-hidden="true">→</div>
+            <div class="timeline__step fade-up stagger-6">
+              <div class="timeline__icon"><span class="timeline__step-num">6</span><svg viewBox="0 0 48 48"><rect x="10" y="8" width="28" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16" y1="18" x2="32" y2="18" stroke="currentColor" stroke-width="2"/><line x1="16" y1="26" x2="28" y2="26" stroke="currentColor" stroke-width="2"/></svg></div>
               <h4 data-i18n="step6Title">After Care Advice</h4>
               <p data-i18n="step6Desc">Personalized tips for lasting wellness.</p>
             </div>
@@ -170,38 +199,39 @@
     <!-- Benefits Section -->
     <section id="benefits" class="section benefits">
       <div class="benefits__bg"></div>
+      <div class="benefits__bg-pattern"></div>
       <div class="container">
         <div class="section__header fade-up">
           <span class="section__label" data-i18n="benefitsLabel">ප්‍රයෝජන</span>
           <h2 class="section__title" data-i18n="benefitsTitle">Wellness Benefits</h2>
         </div>
         <div class="benefits__grid">
-          <div class="benefit-item fade-up">
+          <div class="benefit-item flip-in stagger-1">
             <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
             <h3 data-i18n="ben1Title">Pain Relief</h3>
             <p data-i18n="ben1Desc">Alleviates muscle and joint pain naturally.</p>
           </div>
-          <div class="benefit-item fade-up">
+          <div class="benefit-item flip-in stagger-2">
             <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
             <h3 data-i18n="ben2Title">Stress Reduction</h3>
             <p data-i18n="ben2Desc">Calms the mind and reduces anxiety.</p>
           </div>
-          <div class="benefit-item fade-up">
+          <div class="benefit-item flip-in stagger-3">
             <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></div>
             <h3 data-i18n="ben3Title">Better Sleep</h3>
             <p data-i18n="ben3Desc">Promotes deeper, more restful sleep.</p>
           </div>
-          <div class="benefit-item fade-up">
+          <div class="benefit-item flip-in stagger-4">
             <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
             <h3 data-i18n="ben4Title">Healthy Blood Circulation</h3>
             <p data-i18n="ben4Desc">Improves blood flow and oxygen delivery.</p>
           </div>
-          <div class="benefit-item fade-up">
+          <div class="benefit-item flip-in stagger-5">
             <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1M6 8H5a4 4 0 000 8h1M6 8v8M18 8v8M6 12h12"/></svg></div>
             <h3 data-i18n="ben5Title">Muscle Recovery</h3>
             <p data-i18n="ben5Desc">Accelerates recovery after physical activity.</p>
           </div>
-          <div class="benefit-item fade-up">
+          <div class="benefit-item flip-in stagger-6">
             <div class="benefit-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
             <h3 data-i18n="ben6Title">Natural Healing</h3>
             <p data-i18n="ben6Desc">Supports the body's innate healing ability.</p>
@@ -215,22 +245,26 @@
     <section class="section counters">
       <div class="container">
         <div class="counters__grid">
-          <div class="counter-item fade-up">
+          <div class="counter-item fade-up stagger-1">
+            <div class="counter-item__ring"></div>
             <span class="counter-item__num" data-target="250">0</span>
             <span class="counter-item__plus">+</span>
             <p data-i18n="counter1">Happy Clients</p>
           </div>
-          <div class="counter-item fade-up">
+          <div class="counter-item fade-up stagger-2">
+            <div class="counter-item__ring"></div>
             <span class="counter-item__num" data-target="500">0</span>
             <span class="counter-item__plus">+</span>
             <p data-i18n="counter2">Treatments Completed</p>
           </div>
-          <div class="counter-item fade-up">
+          <div class="counter-item fade-up stagger-3">
+            <div class="counter-item__ring"></div>
             <span class="counter-item__num" data-target="8">0</span>
             <span class="counter-item__plus">+</span>
             <p data-i18n="counter3">Wellness Services</p>
           </div>
-          <div class="counter-item fade-up">
+          <div class="counter-item fade-up stagger-4">
+            <div class="counter-item__ring"></div>
             <span class="counter-item__num" data-target="98">0</span>
             <span class="counter-item__plus">%</span>
             <p data-i18n="counter4">Client Satisfaction</p>
@@ -266,7 +300,15 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <div class="footer__logo">
-            <svg viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="22" rx="8" ry="10" fill="#C7A55B"/><path d="M20 8 C22 14 21 18 20 20 C19 18 18 14 20 8Z" fill="#587B43"/></svg>
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" fill="rgba(199,165,91,0.12)" stroke="rgba(199,165,91,0.3)" stroke-width="1"/>
+              <path d="M24 10 Q31 17 31 24 Q31 30 24 33 Q17 30 17 24 Q17 17 24 10Z" fill="#C7A55B" opacity="0.95"/>
+              <path d="M11 20 Q18 22 20 28 Q16 33 11 31 Q8 25 11 20Z" fill="#C7A55B" opacity="0.55"/>
+              <path d="M37 20 Q30 22 28 28 Q32 33 37 31 Q40 25 37 20Z" fill="#C7A55B" opacity="0.55"/>
+              <path d="M24 7 Q25.5 13 24 16 Q22.5 13 24 7Z" fill="#2ECC8F"/>
+              <ellipse cx="24" cy="23" rx="5.5" ry="7" fill="rgba(23,61,49,0.5)"/>
+              <path d="M24 33 Q28 39 24 44 Q20 39 24 33Z" fill="#C7A55B" opacity="0.7"/>
+            </svg>
             <span data-i18n="footerBrand">නිරෝගා ඔයිල් කෙයාර්</span>
           </div>
           <p data-i18n="footerDesc">Premium Sri Lankan traditional oil massage and wellness center. Your journey to natural healing starts here.</p>
@@ -313,7 +355,7 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
 
-  <script src="js/script.js?v=2"></script>
-  <script src="js/loadSections.js?v=2"></script>
+  <script src="js/script.js?v=3"></script>
+  <script src="js/loadSections.js?v=3"></script>
 </body>
 </html>
