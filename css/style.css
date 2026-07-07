@@ -1523,6 +1523,9 @@ h1, h2, h3, h4, h5, h6 {
 .contact-card__icon svg {
   width: 20px;
   height: 20px;
+  display: block;
+  fill: currentColor;
+  stroke: currentColor;
 }
 
 .contact-card h3 {
