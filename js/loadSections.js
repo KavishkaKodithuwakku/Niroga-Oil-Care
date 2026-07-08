@@ -9,6 +9,8 @@
     'contact-section': 'sections/contact.html'
   };
 
+  const sectionVersion = '4';
+
   function getBaseUrl() {
     const url = new URL(window.location.href);
     const pathname = url.pathname.replace(/\/+$/, '');
@@ -27,12 +29,13 @@
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    const resolvedPath = new URL(filePath, getBaseUrl()).toString();
+    const resolvedPath = new URL(filePath, getBaseUrl());
+    resolvedPath.searchParams.set('v', sectionVersion);
 
-    fetch(resolvedPath)
+    fetch(resolvedPath, { cache: 'no-store' })
       .then(function (response) {
         if (!response.ok) {
-          throw new Error('Failed to load ' + resolvedPath);
+          throw new Error('Failed to load ' + resolvedPath.toString());
         }
         return response.text();
       })

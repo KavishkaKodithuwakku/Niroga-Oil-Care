@@ -1852,40 +1852,59 @@ h1, h2, h3, h4, h5, h6 {
    CONTACT
    ============================================ */
 .contact {
-  background: var(--white);
+  background: linear-gradient(180deg, var(--white) 0%, #fcfaf6 100%);
 }
 
-.contact__grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 40px;
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__content {
+  width: min(860px, 100%);
+  margin: 0 auto;
 }
 
 .contact__cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
 }
 
 .contact-card {
-  padding: 26px;
+  padding: 28px 24px;
   transition: transform var(--transition), box-shadow var(--transition);
   border-bottom: 3px solid transparent;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 16px 40px rgba(23, 61, 49, 0.08);
+  background: linear-gradient(145deg, rgba(255,255,255,0.98), rgba(248,246,242,0.95));
+  border: 1px solid rgba(199, 165, 91, 0.16);
 }
 
 .contact-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 20px 45px rgba(23, 61, 49, 0.12);
   border-bottom-color: var(--gold);
 }
 
 .contact-card--wide {
   grid-column: span 2;
+  text-align: center;
+  max-width: 100%;
+  min-height: 180px;
 }
 
 .contact-card__icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin-bottom: 14px;
   display: flex;
   align-items: center;
@@ -1894,12 +1913,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   color: var(--olive-green);
   transition: all var(--transition);
+  flex-shrink: 0;
 }
 
 .contact-card:hover .contact-card__icon {
   background: linear-gradient(135deg, var(--gold), var(--olive-green));
   color: var(--white);
-  transform: scale(1.1) rotate(8deg);
+  transform: scale(1.08) rotate(8deg);
 }
 
 .contact-card__icon svg {
@@ -1911,6 +1931,14 @@ h1, h2, h3, h4, h5, h6 {
 .contact-card h3 {
   font-size: 1rem;
   margin-bottom: 8px;
+  color: var(--deep-green);
+}
+
+.contact-card a,
+.contact-card p {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .contact-card a {
@@ -1928,22 +1956,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9rem;
   color: var(--text-muted);
   line-height: 1.6;
-}
-
-.contact__map {
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  min-height: 420px;
-  box-shadow: var(--shadow-md);
-  border: 3px solid rgba(199,165,91,0.15);
-}
-
-.contact__map-iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 420px;
-  border: 0;
-  display: block;
+  margin: 0;
 }
 
 /* ============================================
@@ -2453,6 +2466,19 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .section {
     padding: 70px 0;
+  }
+
+  .contact__content {
+    width: 100%;
+  }
+
+  .contact__cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-card--wide {
+    grid-column: span 1;
   }
 
   .about__cards {
