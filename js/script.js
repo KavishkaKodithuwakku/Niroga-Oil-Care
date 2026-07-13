@@ -45,7 +45,7 @@
       founderMessage: '"පරම්පරාගත ආයුර්වේද දැනුම සහ ස්වභාවික තෙල් ප්‍රතිකාරයන් සමඟින් ඔබේ ශරීරයට සහ මනසට සුවයක් ලබා දීම අපගේ අරමුණයි. අපගේ ප්‍රවීණ therapists නවීන සුවතා ප්‍රමිතීන් සමඟ එකතු කරමින් සන්සුන්, සෞඛ්‍ය සම්පන්න සහ සමතුලිත ජීවන රටාවක් ගොඩනැගීමට ඔබට උපකාර කරයි."',
       founderName: '— කළමනාකාර අධ්‍යක්ෂක, නීරෝගා ට්‍රැඩීශනල් ඔයිල් කෙයාර් (PVT) LTD. ',
 
-   
+      whyLabel: 'ඇයි අප',
       whyTitle: 'අපව තෝරා ගැනීමට හේතු',
       why2Title: '100% ස්වභාවික ඖෂධීය තෙල්',
       why2Desc: 'ශ්‍රී ලංකාවේ ස්වභාවික ඖෂධීය ශාක වලින් ලබාගත් පිරිසිදු සහ ගුණාත්මක තෙල් භාවිතා කරයි.',
@@ -199,7 +199,7 @@
       founderMessage: '"Our goal is to provide healing and relaxation for your body and mind through traditional Ayurvedic knowledge and natural oil therapies. Our experienced therapists combine traditional techniques with modern wellness standards to help you achieve a peaceful, healthy, and balanced lifestyle."',
       founderName: '— Managing Director, Niroga Traditional Oil Care (PVT) LTD.',
 
-
+      whyLabel: 'Why Us',
       whyTitle: 'Why Choose Us',
       why2Title: '100% Natural Herbal Oils',
       why2Desc: 'We use pure and high-quality herbal oils sourced from authentic Sri Lankan medicinal plants.',
