@@ -41,12 +41,14 @@
       })
       .then(function (html) {
         container.innerHTML = html;
-        if (typeof window.initPageComponents === 'function') {
-          window.initPageComponents();
-        }
-        if (typeof window.revealHeroElements === 'function') {
-          window.revealHeroElements();
-        }
+        requestAnimationFrame(function () {
+          if (typeof window.initPageComponents === 'function') {
+            window.initPageComponents();
+          }
+          if (typeof window.revealHeroElements === 'function') {
+            window.revealHeroElements();
+          }
+        });
       })
       .catch(function (error) {
         console.error(error);

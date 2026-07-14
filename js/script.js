@@ -383,9 +383,15 @@
   }
 
   function revealHeroElements() {
-    document.querySelectorAll('.hero .fade-up').forEach(function (el) {
+    var heroItems = document.querySelectorAll('.hero .fade-up');
+    heroItems.forEach(function (el) {
       el.classList.add('revealed');
     });
+
+    var heroSection = document.querySelector('.hero');
+    if (heroSection) {
+      heroSection.classList.add('is-ready');
+    }
   }
 
   /* ============================================
