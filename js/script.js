@@ -361,20 +361,25 @@
     loaderInitialized = true;
     document.body.classList.add('loading');
 
-    window.addEventListener('load', function () {
+    function onLoaded() {
       setTimeout(function () {
         loader.classList.add('hidden');
         document.body.classList.remove('loading');
+        document.body.classList.add('page-loaded');
         revealHeroElements();
         initParticles();
         initTiltCards();
       }, 2000);
-    });
+    }
 
+    window.addEventListener('load', onLoaded);
+
+    // Fallback: force-hide after 5s regardless
     setTimeout(function () {
       if (!loader.classList.contains('hidden')) {
         loader.classList.add('hidden');
         document.body.classList.remove('loading');
+        document.body.classList.add('page-loaded');
         revealHeroElements();
         initParticles();
         initTiltCards();
@@ -404,7 +409,15 @@
 
     var canvas = document.getElementById('hero-canvas');
     if (!canvas) return;
-    var ctx = canvas.getContext('2d');
+
+    // Check canvas 2D support
+    var ctx;
+    try {
+      ctx = canvas.getContext('2d');
+      if (!ctx) return;
+    } catch (e) {
+      return;
+    }
 
     function resize() {
       canvas.width = canvas.offsetWidth;
@@ -415,12 +428,12 @@
     window.addEventListener('resize', resize, { passive: true });
 
     var particles = [];
-    var PARTICLE_COUNT = 55;
+    var PARTICLE_COUNT = 50;
     var COLORS = [
       'rgba(199,165,91,',
       'rgba(46,204,143,',
       'rgba(88,123,67,',
-      'rgba(232,160,69,',
+      'rgba(212,137,74,',
       'rgba(255,255,255,'
     ];
 
@@ -653,6 +666,7 @@
     var parallaxElements = document.querySelectorAll('[data-parallax]');
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (window.innerWidth < 768) return; // Skip on mobile for performance
 
     window.addEventListener('scroll', function () {
       var scrollY = window.scrollY;
@@ -660,7 +674,8 @@
         var speed = parseFloat(el.getAttribute('data-parallax')) || 0.3;
         var img = el.querySelector('img');
         if (img) {
-          img.style.transform = 'scale(1.1) translateY(' + (scrollY * speed * 0.25) + 'px)';
+          var offset = scrollY * speed * 0.22;
+          img.style.transform = 'scale(1.1) translateY(' + offset + 'px)';
         }
       });
     }, { passive: true });
